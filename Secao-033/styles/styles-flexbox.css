@@ -1,0 +1,31 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.flex-container {
+  display: flex;
+
+  /* Configurações que vem automaticamente dentro do "display: flex 
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: stretch;
+  ================================================================ */
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  height: 640px;
+  align-content: stretch;
+  background-image: linear-gradient(to top, yellowgreen, green);
+}
+
+.flex-item {
+  width: 33.33%;
+  color: white;
+  background: red;
+  /* margin: 10px; */
+}
+
+
