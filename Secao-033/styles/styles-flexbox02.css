@@ -1,0 +1,66 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.flex-container {
+  display: flex;
+  /* display: inline-flex; */
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-flow: row nowrap;
+  height: 350px;
+  background-image: linear-gradient(to top, yellow, yellowgreen);
+}
+
+.flex-item {
+  width: 100%;
+  color: white;
+  background: red;
+  border: 1px solid black;
+}
+
+.flex-item:nth-child(1) {
+  order: -1;
+}
+
+.flex-item:nth-child(2) {
+  order: -3;
+}
+
+.flex-item:nth-child(3) {
+  order: -4;
+}
+
+.flex-item:nth-child(4) {
+  order: -2;
+}
+
+.flex-item:nth-child(5) {
+  order: -5;
+}
+
+
+
+/* .flex-item:nth-child(3) {
+  align-self: flex-end;
+}
+
+.flex-item:nth-child(4) {
+  align-self: center;
+}
+
+.flex-item:nth-child(2) {
+  align-self: stretch;
+} */
+
+ /* .flex-item:nth-child(2) {  */
+  /* Shorthands Flex
+    flex-grow -> flex shrink -> flex-basis
+    
+    flex-shrink Somente aceita 0 e 1. Se configurar com 0 => Impede que o elemento ".flex-item" diminua o seu deixando ele no tamanho que ele foi configurado
+  */
+  /* flex: 2 1 320px;
+  background-color: purple;
+}  */
