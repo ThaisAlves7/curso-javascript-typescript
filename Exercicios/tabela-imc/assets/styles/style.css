@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap");
+:root {
+  --primary-color: rgb(17, 86, 102);
+  --primary-color-darker: rgb(9, 48, 56);
+}
+
+* {
+  box-sizing: border-box;
+  outline: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--primary-color);
+  font-family: "Open sans", sans-serif;
+  font-size: 1.3em;
+  line-height: 1.5em;
+}
+
+p {
+  margin: .2px;
+  font-size: 0.9em;
+}
+
+h4 {
+  margin-bottom: 10px;
+}
+
+.container {
+  max-width: 640px;
+  margin: 50px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.two-columns {
+  display: flex;
+}
+
+.titulo {
+  margin-top: 20px;
+  margin-bottom: 3px;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.two-columns .col {
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+  margin-bottom: 30px;
+}
+
+.column-right {
+  padding-left: 120px;
+}
+
+form input,
+form label,
+form button {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+form label {
+  margin-top: 20px;
+}
+
+form input {
+  font-size: 24px;
+  height: 50px;
+  padding: 0 20px;
+}
+
+form input:focus {
+  outline: 1px solid var(--primary-color);
+}
+
+form button {
+  border: none;
+  background: var(--primary-color);
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  height: 50px;
+  cursor: pointer;
+  margin-top: 30px;
+}
+
+form button:hover {
+  background: var(--primary-color-darker);
+}
+
+form button:active {
+  background: red;
+}
+
+/* #result, .result{
+  display: block;
+  width: 100%;
+  height: 40px;
+  padding: 10px 20px;
+  font-size: 18px;
+}
+
+#result p, .result p{
+  height: 100%;
+} */
+
+.paragrafo-resultado, .bad {
+  font-size: 1.2em;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color: rgb(109, 255, 182);
+  padding: 10px 20px;
+}
+
+.bad{
+  background-color: rgb(255, 150, 150);
+}
