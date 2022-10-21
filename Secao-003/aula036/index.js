@@ -19,3 +19,5 @@ const pessoas = {
 for (let keys in pessoas) {
     console.log(pessoas[keys]);
 }
+
+
