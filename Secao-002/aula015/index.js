@@ -15,10 +15,10 @@ let num1 = 9;
 // console.log(num2);
 
 //Obtém o maior numero da sequencia
-// console.log(Math.max(1, 2, 3, 4, 5, -10, -50, 1500, 9, 8, 7, 6));
+console.log(Math.max(1, 2, 3, 4, 5, -10, -50, 1500, 9, 8, 7, 6));
 
 //Obtém o menor numero da sequencia
-// console.log(Math.min(1, 2, 3, 4, 5, -10, -50, 1500, 9, 8, 7, 6));
+console.log(Math.min(1, 2, 3, 4, 5, -10, -50, 1500, 9, 8, 7, 6));
 
 //Gerar números aleatórios
 // console.log(Math.random());
