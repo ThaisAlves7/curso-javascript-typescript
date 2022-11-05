@@ -41,5 +41,6 @@ module.exports = {
     'import/prefer-default-export': 0,
     'react-hooks/rules-of-hooks': 'error',
     'react/react-in-jsx-scope': 'off',
+    'default-param-last': 0,
   },
 };
