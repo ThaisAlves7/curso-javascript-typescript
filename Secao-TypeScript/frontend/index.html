@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WebPack - TypeScript</title>
+    <link rel="stylesheet" href="./assets/styles/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form action="" id="form" class="form" autocomplete="off">
+        <h2>Faça seu cadastro</h2>
+        <div class="form-fields">
+          <label for="username">Seu usuário</label>
+          <input
+            type="text"
+            name="username"
+            class="username"
+            id="username"
+            placeholder="Insira seu usuário"
+          />
+          <span class="error-message"
+            >Campo inválido por algum motivo qualquer</span
+          >
+        </div>
+        <div class="form-fields">
+          <label for="email">Seu e-mail</label>
+          <input
+            type="email"
+            name="email"
+            class="email"
+            id="email"
+            placeholder="Insira seu e-mail"
+          />
+          <span class="error-message"
+            >Campo inválido por algum motivo qualquer</span
+          >
+        </div>
+        <div class="form-fields">
+          <label for="username">Sua senha</label>
+          <input
+            type="password"
+            name="password"
+            class="password"
+            id="password"
+            placeholder="Insira seu senha"
+          />
+          <span class="error-message"
+            >Campo inválido por algum motivo qualquer</span
+          >
+        </div>
+        <div class="form-fields">
+          <label for="username">Repetir senha</label>
+          <input
+            type="password"
+            name="password2"
+            class="password2"
+            id="password2"
+            placeholder="Confirme sua senha"
+          />
+          <span class="error-message"
+            >Campo inválido por algum motivo qualquer</span
+          >
+        </div>
+        <div class="form-fields">
+          <button type="submit">Enviar</button>
+        </div>
+      </form>
+    </div>
+    <script src="./assets/js/bundle.js"></script>
+  </body>
+</html>
