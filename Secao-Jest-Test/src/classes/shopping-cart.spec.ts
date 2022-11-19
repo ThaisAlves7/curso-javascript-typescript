@@ -1,4 +1,4 @@
-import { CartItem } from './../interfaces/cart-itens';
+import { CartItem } from '../interfaces/cart-itens';
 import { Discount } from './discount';
 import { ShoppingCart } from './shopping-cart';
 
