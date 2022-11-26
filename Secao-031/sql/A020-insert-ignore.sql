@@ -4,8 +4,3 @@ select
 id, 
 (select id from roles order by rand() limit 1) as qualquer 
 from users order by rand() limit 5;
-
-
-
-
-

@@ -7,3 +7,6 @@ concat('Bio de ', first_name),
 concat('Description de', ' ', first_name), 
 id 
 from users;
+
+-- select * from profiles;
+-- delete from profiles;
