@@ -1,10 +1,17 @@
 const knex = require("../config/database");
 
-const select = knex("users").select("id", "first_name");
+const update = knex("users as u")
+  .join("profiles as p", "u.id", "p.user_id")
+  .update({
+    "p.bio": knex.raw('CONCAT(p.bio, " atualizado")'),
+  })
+  .where({
+    "u.first_name": "Katelyn",
+  });
 
-console.log(select.toString());
+console.log(update.toString());
 
-select
+update
   .then((data) => {
     console.log(data);
   })

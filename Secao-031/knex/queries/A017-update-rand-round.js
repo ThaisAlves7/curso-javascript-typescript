@@ -1,10 +1,12 @@
 const knex = require("../config/database");
 
-const select = knex("users").select("id", "first_name");
+const update = knex("users").update({
+  salary: knex.raw('round(rand() * ??, ??)', [10000, 2]),
+});
 
-console.log(select.toString());
+console.log(update.toString());
 
-select
+update
   .then((data) => {
     console.log(data);
   })

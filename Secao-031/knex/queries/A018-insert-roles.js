@@ -1,10 +1,14 @@
 const knex = require("../config/database");
 
-const select = knex("users").select("id", "first_name");
+const insert = knex("roles").insert([
+  { name: "POST" },
+  { name: "PUT" },
+  { name: "DELETE" },
+]);
 
-console.log(select.toString());
+console.log(insert.toString());
 
-select
+insert
   .then((data) => {
     console.log(data);
   })

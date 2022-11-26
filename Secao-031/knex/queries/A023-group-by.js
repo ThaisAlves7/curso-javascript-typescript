@@ -1,6 +1,12 @@
 const knex = require("../config/database");
 
-const select = knex("users").select("id", "first_name");
+const select = knex("users as u")
+  .select("u.first_name")
+  .leftJoin("profiles as p", "u.id", "p.user_id")
+  .count("u.id as total")
+  .whereIn("u.id", [61, 104, 20, 82])
+  .groupBy("first_name")
+  .orderBy("total", "desc");
 
 console.log(select.toString());
 
